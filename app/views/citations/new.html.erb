@@ -1,0 +1,11 @@
+<% provide(title: 'Add a citation') %>
+<h1>Add new citation</h1>
+<div>
+  <%= form_for(@citation) do |citation| %>
+    <%= citation.label :text %>
+
+    <%= citation.text_area :text %>
+
+    <%= citation.submit 'Add citation' %>
+  <% end %>
+</div>
